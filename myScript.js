@@ -24,9 +24,11 @@ function calculate(e, question, emissions, feedback){
 	console.log(e.srcElement.id);
 	var id = e.srcElement.id;
 	score = score + emissions;
-	if (question == "a2"){		hideSix(question);	}
+	if (question == "2"){		hideSix(question);	}
 	hideAll(question);
 	document.getElementById(id).style.visibility  = "visible";
 	document.getElementById(id).disabled  = true;
 	document.getElementById("score").innerHTML = score;
+	document.getElementById(question).style.display  = "none";
+	document.getElementById((parseInt(question, 10) + 1).toString()).style.display  = "block";
 }

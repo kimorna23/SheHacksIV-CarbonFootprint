@@ -8,65 +8,67 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   	
   	<link rel = "stylesheet" type = "text/css" href = "stylesheet.css">
-
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
+
 <div class="row">
 
-	<div class="col-sm-4">
-		<img src="tree.jpg" style="width=30%">
+	<div class="col-sm-2">
+		<img src="tree2.jpg" style="display=fixed; width=30%">
 	</div>
 
-	<div class="col-sm-8">
+	<div class="col-sm-9" id = "margin">
 
 		<h1>Track your Carbon Footprint</h1>
-		<p>Want to know how your lifestyle affects the earth? The following questions will tell you how you're doing, plus some helpful tips to minimize your footprint in the future.</p>
+		<p style="text-align: center">Want to know how your lifestyle affects your annual carbon footprint? The following questions will tell you how you're doing - the lower your number, the better!</p>
 
-		<div class="question container">
-			<h2>How do you get to work/school?</h2>
+		<div class="question container" id="1">
+			<h4>How do you get to work/school?</h4>
+		
+			<button id="11" type="button" class="btn" onclick="calculate(event, '1', 0, '')">Walk or bike</button>
+			<button id="12" type="button" class="btn" onclick="calculate(event, '1', 15, '')">By car</button>
+			<button id="13" type="button" class="btn" onclick="calculate(event, '1', 7, '')">Public transit</button>
 		</div>
 
-		<div class="answers container">
-			<button id="a11" type="button" onclick="low(event, 'a1')">Walk or bike</button>
-			<button id="a12" type="button" onclick="high(event, 'a1')">By car</button>
-			<button id="a13" type="button" onclick="mid(event, 'a1')">Public transit</button>
+		<div class="question container" id="2" style="display:none;">
+
+			<h4>What is your meat consumption on an average day? </h4>
+
+			<button id="21" type="button" class="btn" onclick="calculate(event, '2', 30, '<br>')">More than 2 servings a day</button>
+			<button id="22" type="button" class="btn" onclick="calculate(event,'2', 20, '<br>')">One serving a day</button>
+			<button id="23" type="button" class="btn" onclick="calculate(event,'2', 10, 'br>')">One serving every 2 days or less</button>
+			<button id="24" type="button" class="btn" onclick="calculate(event,'2', 5, 'br>')">Pescetarian (only eat fish)</button>
+			<button id="25" type="button" class="btn" onclick="calculate(event,'2', 3, 'br>')">Vegetarian</button>
+			<button id="26" type="button" class="btn" onclick="calculate(event,'2', 2, 'br>')">Vegan</button>
+			<br><br><p>
 		</div>
 
+		<div class="question container" id="3" style="display:none;">
+			<h4>How often do you take a flight in an average year?</h4>
 
-		<div class="question container">
-			<h2>Do you eat meat on a daily basis (at least once a day)?</h2>
+			<button id="31" type="button" class="btn" onclick="calculate(event, '3', 10, '<br>')">More than 4 times</button>
+			<button id="32" type="button" class="btn" onclick="calculate(event, '3', 3)">Less than 2 times</button>
+			<button id="33" type="button" class="btn" onclick="calculate(event, '3', 5, '<br>')">2-4 times</button>
 		</div>
 
-		<div class="answer container">
-			<button id="a21" type="button" onclick="high(event, 'a2')">Yes, can't live without it</button>
-			<button id="a22" type="button" onclick="mid(event,'a2')">Sometimes, but it's not a necessity</button>
-			<button id="a23" type="button" onclick="low(event,'a2')">No, I'm a vegitarian/vegan</button>
+		<div class="question container" id="4" style="display:none;">
+			<h4> How much water do you use per day?</h4>
+
+			<button id="41" type = "button" class="btn" onclick="calculate(event, '4',5,'<br>')">I take no special effort to limit my water use, I take showers of average length</button>
+			<button id="42" type = "button" class="btn" onclick="calculate(event, '4',0,'<br>')">I use water efficient toilets and taps, I take short showers, I rarely water the garden</button>
+			<button id="43" type = "button" class="btn" onclick="calculate(event, '4',10,'<br>')">I often take baths, or often water the garden, or I own a pool</button>
 		</div>
 
-		<div class="question container">
-			<h2>How long do you leave your phone/laptop plugged in over a 24hr period?</h2>
+<div class="row">
+	<div style="margin:auto">
+		<img src="feet2.png" style='height:220px'>
+		<div style="margin:-60px 0px 0px 0px; width: 230px">
+			<p style="font-weight: bold; text-align: center; font-size: 40px;" id="score"></p>
 		</div>
-
-		<div class="answer container">
-			<button id="a31" type="button" onclick="high(event, 'a3')">More than 8hrs, sometimes overnight</button>
-			<button id="a32" type="button" onclick="low(event, 'a3')">0-3hrs</button>
-			<button id="a33" type="button" onclick="mid(event, 'a3')">4-7hrs</button>
-		</div>
-
-		<div class="question container">
-			<h2> How much water do you use per day?</h2>
-		</div>
-
-		<div class="answer container">
-			<button type = "button">300 liters (the Canadian average per person)</button>
-			<button type = "button">less than 300 liters</button>
-			<button type = "button">more than 300 liters</button>
-		</div>
-
-		<div class="container pt-3">
-			<p id="score"></p>
-		</div>
+	</div>
+</div>
 
 	</div>
 
