@@ -1,15 +1,44 @@
-h2, h1, h2, p { 
-	color: #568203;
+h1, h4, p, button { 
+	color: rgb(82,44,2);
+	font-family: 'Trebuchet MS';
 }
 
-body {
+h1{
+	text-align: center;
+}
+
+h4{
+	margin-bottom: 30px;
+}
+
+#info{
+	margin-bottom: 45px;
+}
+
+#margin {
+	margin-top: 200px;
+}
+body{
 	background-color: rgb(149, 255, 165);
 }
-{
-	background-image: url("tree.jpg");
-  	background-repeat: no-repeat;
-  	background-position: left top;
-  	background-attachment: scroll;
+
+.answer, .question{
+	margin-bottom: 30px;
+	margin-top: 10px;
+	border-style: solid;
+	border-color: rgb(34, 110, 1);
+	border-width: 0 4px 0 4px;
+	text-align: center;
+	padding: 15px 15px 15px 15px;
 }
 
- 
+.btn{
+	background-color: rgb(109, 215, 1);
+	margin: 5px 0 5px 0;
+}
+
+img {
+  opacity: 0.9;
+}
+img:hover {
+  opacity: 1.0;}
