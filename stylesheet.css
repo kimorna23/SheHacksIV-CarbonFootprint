@@ -3,5 +3,7 @@ h2, h1, h2, p {
 }
 
 body {
-	background-color: #58EE13
+	background-color: #cfd760;
 }
+button{background-color: #cfd000;
+	color: #568203;}
