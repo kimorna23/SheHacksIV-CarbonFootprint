@@ -52,3 +52,13 @@ img {
   transform: translate(-50%, -50%);
   font-size: 18px;
 }
+
+@media only screen and (max-width: 600px) {
+  #tree {
+    display: none;
+  }
+
+  #margin{
+  	margin-top: 50px;
+  }
+}
