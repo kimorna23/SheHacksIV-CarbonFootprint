@@ -21,7 +21,16 @@
 <button type="button">By car</button>
 <button type="button">Public transit</button>
 
-<img src="tree.jpg">
+
+<div class="question container">
+	<h2>How do you get to work/school?</h2>
+</div>
+
+<div class="answers container">
+	<button id="a11" type="button" onclick="low(event, 'a1')">Walk or bike</button>
+	<button id="a12" type="button" onclick="high(event, 'a1')">By car</button>
+	<button id="a13" type="button" onclick="mid(event, 'a1')">Public transit</button>
+</div>
 
 
 <div class="question container">
@@ -29,9 +38,9 @@
 </div>
 
 <div class="answer container">
-	<button type="button">Yes, can't live without it</button>
-	<button type="button">Sometimes, but it's not a necessity</button>
-	<button type="button">No, I'm a vegitarian/vegan</button>
+	<button id="a21" type="button" onclick="high(event, 'a2')">Yes, can't live without it</button>
+	<button id="a22" type="button" onclick="mid(event,'a2')">Sometimes, but it's not a necessity</button>
+	<button id="a23" type="button" onclick="low(event,'a2')">No, I'm a vegitarian/vegan</button>
 </div>
 
 
@@ -41,18 +50,22 @@
 </div>
 
 <div class="answer container">
-	<button type="button">More than 8hrs, sometimes overnight</button>
-	<button type="button">0-3hrs</button>
-	<button type="button">4-7hrs</button>
+	<button id="a31" type="button" onclick="high(event, 'a3')">More than 8hrs, sometimes overnight</button>
+	<button id="a32" type="button" onclick="low(event, 'a3')">0-3hrs</button>
+	<button id="a33" type="button" onclick="mid(event, 'a3')">4-7hrs</button>
+</div>
+
+<div class="container pt-3">
+	<p id="score"></p>
 </div>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+	<script src="myScript.js"></script>
 <h2> How much water do you use per day?</h3>
 <button type = "button">300 liters (the Canadian average per person)</button>
 <button type = "button">less than 300 liters</button>
 <button type = "button">more than 300 liters</button>
-</body>
 </html>
