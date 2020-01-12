@@ -27,9 +27,9 @@
 		<div class="question container">
 			<h4>How do you get to work/school?</h4>
 		
-			<button id="a11" type="button" class="btn" onclick="low(event, 'a1', 0, '')">Walk or bike</button>
-			<button id="a12" type="button" class="btn" onclick="high(event, 'a1', 15, '')">By car</button>
-			<button id="a13" type="button" class="btn" onclick="mid(event, 'a1', 7, '')">Public transit</button>
+			<button id="a11" type="button" class="btn" onclick="calculate(event, 'a1', 0, '')">Walk or bike</button>
+			<button id="a12" type="button" class="btn" onclick="calculate(event, 'a1', 15, '')">By car</button>
+			<button id="a13" type="button" class="btn" onclick="calculate(event, 'a1', 7, '')">Public transit</button>
 		</div>
 
 
@@ -49,17 +49,17 @@
 		<div class="question container">
 			<h4>How often do you take a flight in an average year?</h4>
 
-			<button id="a31" type="button" class="btn" onclick="high(event, 'a3', 10, '<br>')">More than 4 times</button>
-			<button id="a32" type="button" class="btn" onclick="low(event, 'a3', 3)">Less than 2 times</button>
-			<button id="a33" type="button" class="btn" onclick="mid(event, 'a3', 5, '<br>')">2-4 times</button>
+			<button id="a31" type="button" class="btn" onclick="calculate(event, 'a3', 10, '<br>')">More than 4 times</button>
+			<button id="a32" type="button" class="btn" onclick="calculate(event, 'a3', 3)">Less than 2 times</button>
+			<button id="a33" type="button" class="btn" onclick="calculate(event, 'a3', 5, '<br>')">2-4 times</button>
 		</div>
 
 		<div class="question container">
 			<h4> How much water do you use per day?</h4>
 
-			<button id="a41" type = "button" class="btn">I take no special effort to limit my water use, I take showers of average length</button>
-			<button id="a42" type = "button" class="btn">I use water efficient toilets and taps, I take short showers, I rarely water the garden</button>
-			<button id="a43" type = "button" class="btn" onclick="calculate(event, 'a4'">I often take baths, or often water the garden, or I own a pool</button>
+			<button id="a41" type = "button" class="btn" onclick="calculate(event, 'a4',5,'<br>')">I take no special effort to limit my water use, I take showers of average length</button>
+			<button id="a42" type = "button" class="btn" onclick="calculate(event, 'a4',0,'<br>')">I use water efficient toilets and taps, I take short showers, I rarely water the garden</button>
+			<button id="a43" type = "button" class="btn" onclick="calculate(event, 'a4',10,'<br>')">I often take baths, or often water the garden, or I own a pool</button>
 		</div>
 
 <div class="row">
