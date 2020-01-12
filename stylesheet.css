@@ -1,4 +1,4 @@
-h2, h1, h2, h4, p, button { 
+h1, h4, p, button { 
 	color: rgb(82,44,2);
 	font-family: 'Trebuchet MS';
 }
@@ -26,8 +26,19 @@ body{
 	margin-bottom: 30px;
 	margin-top: 10px;
 	border-style: solid;
-	border-color: rgb(200, 255, 220);
-	border-width: 4px;
+	border-color: rgb(34, 110, 1);
+	border-width: 0 4px 0 4px;
 	text-align: center;
 	padding: 15px 15px 15px 15px;
 }
+
+.btn{
+	background-color: rgb(109, 215, 1);
+	margin: 5px 0 5px 0;
+}
+
+img {
+  opacity: 0.9;
+}
+img:hover {
+  opacity: 1.0;}
