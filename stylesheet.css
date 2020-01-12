@@ -1,12 +1,33 @@
-h2, h1, h2, p { 
-	color: black;
+h2, h1, h2, h4, p, button { 
+	color: rgb(82,44,2);
+	font-family: 'Trebuchet MS';
 }
 
+h1{
+	text-align: center;
+}
+
+h4{
+	margin-bottom: 30px;
+}
+
+#info{
+	margin-bottom: 45px;
+}
 
 #margin {
 	margin-top: 200px;
 }
 body{
-
 	background-color: rgb(149, 255, 165);
+}
+
+.answer, .question{
+	margin-bottom: 30px;
+	margin-top: 10px;
+	border-style: solid;
+	border-color: rgb(200, 255, 220);
+	border-width: 4px;
+	text-align: center;
+	padding: 15px 15px 15px 15px;
 }
