@@ -3,7 +3,10 @@ h2, h1, h2, p {
 }
 
 body {
-	background-color: #cfd760;
+	background-color: rgb(149, 255, 165);
 }
+
 button{background-color: #cfd000;
-	color: #568203;}
+	color: #568203;
+}
+	
