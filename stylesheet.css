@@ -36,9 +36,14 @@ body{
 	background-color: rgb(109, 215, 1);
 	margin: 5px 0 5px 0;
 }
+.btn:hover {
+	background-color: rgb(34, 110, 1);
+	color:white;
+}
 
 img {
   opacity: 0.9;
 }
 img:hover {
-  opacity: 1.0;}
+  opacity: 1.0;
+}
