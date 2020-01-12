@@ -2,6 +2,8 @@ h2, h1, h2, p {
 	color: #568203;
 }
 
+
 body{
-	background-image: url("tree.jpg");
+
+	background-color: rgb(149, 255, 165);
 }
