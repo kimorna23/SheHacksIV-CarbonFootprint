@@ -2,6 +2,13 @@ h2, h1, h2, p {
 	color: #568203;
 }
 
-.question{
-	background-image: url("tree.jpg");
+body {
+	background-color: rgb(149, 255, 165);
 }
+	background-image: url("tree.jpg");
+  	background-repeat: no-repeat;
+  	background-position: left top;
+  	background-attachment: scroll;
+}
+
+ 
